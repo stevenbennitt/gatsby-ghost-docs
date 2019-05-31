@@ -261,6 +261,12 @@ kbd {
 /* Custom styles */
 /* ----------------------------------------------------------------------- */
 
+header.top-0.left-0.right-0.z-9999 {
+    background-color: #4d34c6;
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+}
+
 .navbar-container {
     flex: 1 1 auto;
     overflow: hidden;
