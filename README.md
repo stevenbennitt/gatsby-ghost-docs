@@ -1,36 +1,46 @@
-# Ghost Docs
+## Installation from Source
 
-This is the repository for [Ghost](https://github.com/tryghost/ghost)'s official documentation, located at https://docs.ghost.org. You'll probably just want to head over there and read them directly on the web.
-
-
-## 👻 Using Ghost
-
-If you're looking for some quick links to get you started, try these:
-
-- [Introduction to Ghost](https://docs.ghost.org/concepts/)
-- [Detailed install guides](https://docs.ghost.org/setup/)
-- [Ghost tutorials](https://docs.ghost.org/tutorials/)
-- [Full API reference](https://docs.ghost.org/api/)
-- [Frequently Asked Questions](https://docs.ghost.org/faq/)
+1. `git clone` this repo & `cd` into it as usual
+2. `git submodule update --init` to pull down the submodules
+3. `npm install --global gatsby-cli` to install Gatsby
+4. `yarn` to install top-level dependencies.
 
 
-## 🚑 Getting Support
+### Run Locally
 
-If you're stuck on something and need a helping hand, you'll find a large community of thousands of Ghost users over on the [official Ghost forum](https://forum.ghost.org). Search to see if someone has gotten stuck on the same thing before! If not, feel free to start a new topic 🤗
-
-
-## 🛠 Contributing
-
-If you're interested in contributing to our docs either with content or code, we can always use the help! All of this is open source so that anyone can get involved if they have fixes or improvements to add.
-
-**[Read the contributing guide 👉](https://github.com/TryGhost/docs/blob/master/.github/CONTRIBUTING.md)**
+```
+gatsby develop
+```
+- View: [http://localhost:8000](http://localhost:8000)
+- Alias: `yarn dev`
 
 
-#### Code of Conduct
+### Create Production Build
 
-Ghost is dedicated to building constructive, diverse and safe community. We expect everyone participating the Ghost community to read and follow our [code of conduct](https://ghost.org/conduct/). We have absolutely zero tolerance for poisonous behaviour of any kind.
+```
+gatsby build
+```
+
+and
+
+```
+gatsby serve
+```
+
+- View: [http://localhost:9000](http://localhost:9000)
+- Alias: `yarn serve`
 
 
-## Copyright & License
+## Testing
 
-Copyright (c) 2018-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
+Before submitting changes, run
+
+```
+yarn test
+```
+
+This will run some tests to verify that
+
+- Algolia integration works
+- Frontend works as expected
+- No linting issues are present
