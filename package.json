@@ -68,7 +68,7 @@
     "gatsby-remark-prismjs": "3.2.9",
     "gatsby-source-filesystem": "2.0.37",
     "gatsby-source-ghost": "3.3.3",
-    "gatsby-transformer-remark": "2.3.12",
+    "gatsby-transformer-remark": "5.25.1",
     "gatsby-transformer-sharp": "2.1.19",
     "gatsby-transformer-yaml": "2.1.12",
     "lottie-web": "^5.5.4",
